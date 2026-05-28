@@ -1,6 +1,7 @@
 :root {
-    --my-main: #D52047;
-    --my-orange: #EE3D1B;
-    --my-black: #000000;
-    --my-white: #ffffff;
+    --my-darkgreen: #394508;
+    --my-green: #619111;
+    --my-lightgreen: #D2FD9C;
+    --my-gray: #5D5D5D;
+    --my-background-gray: #EDEDED;
 }
