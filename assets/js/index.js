@@ -1,15 +1,47 @@
-const navigationButtons = document.getElementById('navigation-buttons')
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('fixed-nav');
 
-function openBurger() {
-    navigationButtons.style.visibility = 'visible'
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+const contactList = document.getElementById('contact-list');
+const showButton = document.getElementById('show-button');
+
+showButton.addEventListener('click', function() {
+    contactList.classList.toggle('d-flex')
+    showButton.classList.toggle('button-close')
+})
+
+const openModalBtn1 = document.getElementById('open-modal-btn1');
+const openModalBtn2 = document.getElementById('open-modal-btn2');
+const modal = document.getElementById('my-modal');
+const closeModalBtn = document.getElementById('close-modal-btn');
+
+const feedbackForm = document.getElementById('feedback-form');
+
+openModalBtn1.addEventListener('click', openModal);
+openModalBtn2.addEventListener('click', openModal);
+
+function openModal() {
+    modal.classList.add('modal-open');
+    document.body.style.overflow = 'hidden';
 }
 
-function closeBurger() {
-    navigationButtons.style.visibility = 'hidden'
+closeModalBtn.addEventListener('click', closeModal);
+
+function closeModal() {
+    modal.classList.remove('modal-open');
+    document.body.style.overflow = '';
 }
 
-const burgerButton = document.getElementById('burger-button');
-const closeBurgerButton = document.getElementById('close-burger');
+feedbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-burgerButton.addEventListener('click', openBurger);
-closeBurgerButton.addEventListener('click', closeBurger);
+    alert('Форму успішно відправлено!');
+    closeModal();
+    feedbackForm.reset();
+});

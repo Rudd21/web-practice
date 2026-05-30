@@ -18,11 +18,13 @@
         <section class="header">
             <header>
                 <nav>
-                    <div class="logo">
-                        <img src="./assets/images/small-logo.svg" alt="">
-                        <p>Etran</p>
+                    <div id="fixed-nav" class="fixed-nav">
+                        <div class="logo">
+                            <img src="./assets/images/small-logo.svg" alt="">
+                            <p>Etran</p>
+                        </div>
+                        <button id="open-modal-btn1" class="get-started-button">Get started</button>
                     </div>
-                    <button class="get-started-button">Get started</button>
                 </nav>
                 <div class="header-text">
                     <h1>Money Transfers Made <span>Simple</span></h1>
@@ -43,19 +45,30 @@
                         <p>Advanced Technology</p>
                     </div>
                 </div>
-                <ul class="header-contact">
-                    <li>Contact</li>
-                    <li>Social</li>
-                    <li>Address</li>
-                    <li>Legal Terms</li>
-                </ul>
+                <div class="header-contact">
+                    <ul id="contact-list" class="d-none">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                        </li>
+                        <li>
+                            <a href="#">Address</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal Terms</a>
+                        </li>
+                    </ul>
+                    <div id="show-button"></div>
+                </div>
             </header>
         </section>
 
         <section class="main-footer">
             <main>
                 <div class="banner">
-                    <img src="./assets/images/header-image.png" alt="">
+                    <img class="banner-image" src="./assets/images/header-image.png" alt="">
                     <p class="banner-text">We escalate transfer efficiency and productivity</p>
                     <div class="logo-wall">
                         <img src="./assets/images/blooming-logo.svg" alt="">
@@ -139,7 +152,7 @@
 
                 <div class="download">
                     <p class="download-title">Download Etran and manage everything from your phone.</p>
-                    <button class="get-started-button">Get started</button>
+                    <button id="open-modal-btn2" class="get-started-button">Get started</button>
                 </div>
             </main>
 
@@ -165,7 +178,32 @@
                 </div>
             </footer>
         </section>
-    </div>
+
+        <div id="my-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button id="close-modal-btn" class="modal-close">x</button>
+
+                <h3 class="modal-title">Get Started!</h3>
+                <form class="modal-form" id="feedback-form">
+                    <div class="form-group">
+                        <label for="userName">Name:</label>
+                        <input type="text" id="userName" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email:</label>
+                        <input type="email" id="userEmail" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Message:</label>
+                        <textarea id="userMessage" name="message" rows="4" placeholder="Text message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sent</button>
+                </form>
+            </div>
+        </div>
 </body>
 <script src="./assets/js/index.js "></script>
 
