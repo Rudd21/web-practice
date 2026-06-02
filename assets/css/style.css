@@ -179,7 +179,55 @@ h2 {
 }
 
 .banner-image {
+    position: relative;
     width: 100%;
+    aspect-ratio: 335 / 223;
+    background: url('../images/header-image.png');
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.tranzaction {
+    position: absolute;
+    padding: 0.2rem;
+    min-width: 20vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background: rgba(210, 253, 156, 0.7);
+    border-radius: 2rem;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.tranzaction-check {
+    margin-left: 55vw;
+    margin-top: 6%;
+}
+
+.tranzaction-profit {
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.tranzaction-wallet {
+    margin-left: 23%;
+    margin-top: 45%;
+}
+
+.tranzation-logo {
+    width: 20px;
+    background: rgb(210, 253, 156);
+    padding: 4px;
+    margin: 1px;
+    border-radius: 100%;
+}
+
+.tranzaction p {
+    flex-grow: 1;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .banner-text {
@@ -498,8 +546,17 @@ footer {
     .header-contact a {
         font-size: 0.719rem;
     }
+    .banner-image {
+        aspect-ratio: 720 / 381;
+    }
     .banner-text {
         width: 45rem;
+    }
+    .tranzation-logo {
+        width: 30px;
+    }
+    .tranzaction p {
+        font-size: 1rem;
     }
     #show-button {
         display: none;
@@ -603,8 +660,22 @@ footer {
     #show-button {
         display: none;
     }
-    .banner img {
+    .banner-image {
         width: 100%;
+        aspect-ratio: 680 / 379;
+    }
+    .tranzaction {
+        width: 5vw;
+    }
+    .tranzation-logo {
+        width: 30px;
+    }
+    .tranzaction-check {
+        margin-left: 30vw;
+        margin-top: 6%;
+    }
+    .tranzaction p {
+        font-size: 1rem;
     }
     .banner-text {
         width: 42.5rem;
