@@ -217,11 +217,17 @@ h2 {
 }
 
 .tranzation-logo {
-    width: 20px;
+    width: 30px;
+    height: 30px;
     background: rgb(210, 253, 156);
     padding: 4px;
     margin: 1px;
     border-radius: 100%;
+}
+
+.tranzation-logo img {
+    width: 20px;
+    height: 20px;
 }
 
 .tranzaction p {
@@ -554,6 +560,11 @@ footer {
     }
     .tranzation-logo {
         width: 30px;
+        height: 30px;
+    }
+    .tranzation-logo img {
+        width: 20px;
+        height: 20px;
     }
     .tranzaction p {
         font-size: 1rem;
@@ -665,10 +676,16 @@ footer {
         aspect-ratio: 680 / 379;
     }
     .tranzaction {
-        width: 5vw;
+        min-width: 0px;
+        width: 12rem;
     }
     .tranzation-logo {
         width: 30px;
+        height: 30px;
+    }
+    .tranzation-logo img {
+        width: 20px;
+        height: 20px;
     }
     .tranzaction-check {
         margin-left: 30vw;
