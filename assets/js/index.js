@@ -1,3 +1,60 @@
+const productionContent = [{
+        path: './assets/images/2x.svg',
+        text: 'Double Your Productivity'
+    },
+    {
+        path: './assets/images/diagram-prod.svg',
+        text: 'Efficiency Increase Per Transfer'
+    },
+    {
+        path: './assets/images/centra-prod.svg',
+        text: 'Centralize Your Finances'
+    },
+    {
+        path: './assets/images/130-prod.svg',
+        text: 'More Activity'
+    }
+]
+
+const softwareContent = [{
+        path: './assets/images/pocket-software.png',
+        text: 'Safe Storage'
+    },
+    {
+        path: './assets/images/finger-software.png',
+        text: 'Secure'
+    },
+    {
+        path: './assets/images/finance-software.png',
+        text: 'Earn Interest'
+    },
+    {
+        path: './assets/images/family-software.png',
+        text: 'Family Plans'
+    }
+]
+
+const productionContainer = document.getElementById('production-content');
+const softwareContainer = document.getElementById('software-cards');
+
+productionContainer.innerHTML = productionContent.map((item) =>
+    `
+    <div class="prod-card">
+        <img src="${item.path}" alt="">
+        <p class="card-text">${item.text}</p>
+    </div>
+    `
+).join('');
+
+softwareContainer.innerHTML = softwareContent.map((item) =>
+    `
+    <div class="software-card">
+        <img src="${item.path}" alt="">
+        <p>${item.text}</p>
+    </div>
+    `
+).join('');
+
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('fixed-nav');
 
