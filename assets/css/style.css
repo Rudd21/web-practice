@@ -202,18 +202,18 @@ h2 {
 }
 
 .tranzaction-check {
-    margin-left: 55vw;
-    margin-top: 6%;
+    left: 55%;
+    top: 6%;
 }
 
 .tranzaction-profit {
-    margin-left: 5%;
-    margin-top: 15%;
+    left: 5%;
+    top: 15%;
 }
 
 .tranzaction-wallet {
-    margin-left: 23%;
-    margin-top: 45%;
+    left: 23%;
+    top: 45%;
 }
 
 .tranzation-logo {
@@ -688,8 +688,7 @@ footer {
         height: 20px;
     }
     .tranzaction-check {
-        margin-left: 30vw;
-        margin-top: 6%;
+        top: 6%;
     }
     .tranzaction p {
         font-size: 1rem;
@@ -732,11 +731,6 @@ footer {
     }
     .benefit-card img {
         width: 100%;
-    }
-    .image-breaker {
-        height: 21.875rem;
-        overflow: hidden;
-        border-radius: 10px;
     }
     .image-breaker {
         height: 21.875rem;
